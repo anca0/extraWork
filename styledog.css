@@ -1,46 +1,65 @@
+.page {
+  margin-top: 50px;
+  display: flex;
+}
+.page .side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page .content {
+  flex: 2;
+  border-left: solid 1px black;
+  padding: 0 100px;
+}
+
+.page .content .image-container {
+  display: flex;
+  justify-content: center;
+}
+
 .bullets {
-    display: block;
-    list-style-type: none;
-    font-size: 20px;
-    position: fixed;
-    padding: 100px;
-    margin: auto;
+  list-style-type: none;
+  font-size: 20px;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 400px;
-    padding-bottom: 600px;
-    width: 800px;
-    float: right;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
-#image { 
-    float: right;
-    width: unset;
-    border-radius: 60px;
-    border: black;
-    border-style: groove;
-    position: relative;
-    right: 600px;
+#image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: black;
+  border-style: groove;
+}
+h2 {
+  font-style: bold;
+}
+dt {
+  font-weight: 800;
+}
+body {
+  background-color: wheat;
+}
+#myDog {
+  color: blue;
 }
 
-.vertical_line {
-    border-left: 2px solid black;
-    height: 600px;
-    position: absolute;
-  }
-  h2{
-  font-style: bold;    
-  }
-  dt{
-      font-weight: 800;
-  }
-  body{
-      background-color: wheat;
-  }
-  #myDog{
-      color: blue;
-  }
+.prop dd {
+  display: inline;
+  margin: 0;
+}
+.prop dt {
+  display: inline-block;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.prop {
+  padding: 5px;
+}
